@@ -17,4 +17,7 @@ val DotlanJump.jump
                 ?: mapsolarsystemjumps.findFromPKs(endSystemID, startSystemID)!!
     }
 
-val mapregion.dotlanMap get() = DotlanMaps[regionID]
+val mapregion.dotlanMap get() = DotlanMaps[this]
+
+fun DotlanMaps.getMap(region: mapregion) = DotlanMaps.getMap(region.regionID)
+operator fun DotlanMaps.get(region: mapregion) = DotlanMaps.getMap(region)
