@@ -33,7 +33,7 @@ val dotlanmaps_version = getNewestCommit("rnett/dotlanmaps", "8904680b01")
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
-    compile("com.github.rnett:dotlanmaps:$dotlanmaps_version")
+    compile("com.github.rnett:dotlanmaps:1.0.0")
     compile("com.github.rnett:sde:$sde_version")
 }
 
