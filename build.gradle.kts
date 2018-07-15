@@ -28,7 +28,7 @@ fun getNewestCommit(gitURL: String, default: String = ""): String {
     }
 }
 
-val sde_version = getNewestCommit("rnett/sde", "5d170aab25")
+val sde_version = getNewestCommit("rnett/sde", "5a95568bf6")
 val dotlanmaps_version = getNewestCommit("rnett/dotlanmaps", "8904680b01")
 
 dependencies {
