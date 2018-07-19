@@ -29,11 +29,10 @@ fun getNewestCommit(gitURL: String, default: String = ""): String {
 }
 
 val sde_version = getNewestCommit("rnett/sde", "5a95568bf6")
-val dotlanmaps_version = getNewestCommit("rnett/dotlanmaps", "8904680b01")
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
-    compile("com.github.rnett:dotlanmaps:1.0.0")
+    compile("com.github.rnett:dotlanmaps:1.0.1")
     compile("com.github.rnett:sde:$sde_version")
 }
 
