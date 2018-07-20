@@ -32,8 +32,8 @@ val sde_version = getNewestCommit("rnett/sde", "5a95568bf6")
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
-    compile("com.github.rnett:dotlanmaps:1.0.+")
-    compile("com.github.rnett:sde:$sde_version")
+    implementation("com.github.rnett:dotlanmaps:1.0.+")
+    implementation("com.github.rnett:sde:$sde_version")
 }
 
 configure<JavaPluginConvention> {
